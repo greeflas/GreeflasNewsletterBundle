@@ -1,4 +1,9 @@
 newsletter_subscribe:
   path: /newsletter-subscribe
   controller: Greeflas\Bundle\NewsletterBundle\Controller\DefaultController::subscribe
-  methods: [GET, POST]
+  methods: [POST]
+
+xhr_newsletter_subscribe:
+  path: /xhr-newsletter-subscribe
+  controller: Greeflas\Bundle\NewsletterBundle\Controller\AjaxController::subscribe
+  methods: [POST]
